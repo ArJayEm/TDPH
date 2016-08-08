@@ -1,0 +1,55 @@
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+
+body
+    background-color: #EEE
+    font-family: 'Open Sans', sans-serif
+    color: #555
+
+a
+    text-decoration: none
+
+.clearfix
+    overflow: auto
+
+.content
+    @extend .clearfix
+    padding: 30px 0
+    position: relative
+    z-index: 2
+    background-color: inherit
+    margin-bottom: 200px
+    .header-text
+        margin: 0
+        padding: 15px
+        text-align: center
+        font-weight: 700
+        font-size: 2.5em
+
+.container
+    @extend .clearfix
+    width: 1440px
+    max-width: 90%
+    height: 100%
+    margin: 0 auto
+
+.loader_wrapper
+    display: flex
+    position: fixed
+    z-index: 999
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: white
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    p
+        color: #555
+        +no-select()
+    .loader
+        +no-select()

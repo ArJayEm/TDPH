@@ -1,0 +1,31 @@
+.btn
+    border: 1px solid #FFF
+    outline: none
+    text-decoration: none
+    text-align: center
+    padding: .4rem 1.5rem
+    &:hover
+        color: #FFF
+        background-color: rgba(255,255,255,0.2)
+
+.btn-primary
+    @include btn-color($primary-color)
+
+.btn-success
+    @include btn-color($success-color)
+
+.btn-info
+    @include btn-color($info-color)
+
+.btn-warning
+    @include btn-color($warning-color)
+
+.btn-danger
+    @include btn-color($danger-color)
+
+.btn-borderless
+    border: none
+
+.btn-round
+    @extend .btn
+    border-radius: 2rem
