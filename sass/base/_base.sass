@@ -79,7 +79,7 @@ $hexagon-color: #768400
         position: absolute
         top: -10px
         left: -10px
-        animation: 3s spin cubic-bezier(.155,1.105,.295,1.12) infinite
+        animation: 2s spin cubic-bezier(.155,1.105,.295,1.12) infinite
 
 .hexagon
     position: absolute
@@ -103,7 +103,7 @@ $hexagon-color: #768400
         border-top: 11.55px solid $hexagon-color
 
 @each $index, $top, $left in (1, 40px, 47px), (2, 40px,  97px), (3, 78px, 22px), (4, 78px, 72px), (5, 78px, 122px), (6, 117px, 47px), (7, 117px, 97px)
-    $time: 3s
+    $time: 2s
     $delay: $time / 14
     .hexagon.hex_#{$index}
         top: $top
