@@ -34,7 +34,7 @@ $(window).on("load", function() {
     // remove loader when all images has been loaded.
     $('.loader_wrapper').fadeOut(300, function() {
         // callback after animation
-        $(this).css({'display' : 'none', 'background-color' : 'rgba(0,0,0,0.8)', 'color' : 'white'});
+        $(this).css({'display' : 'none', 'background-color' : 'rgba(30,30,30,0.8)', 'color' : 'white'});
     });
     $('.loader_wrapper > p').css({'color' : 'white'});
 });
